@@ -7,6 +7,14 @@ function App() {
       <header className="App-header">
         <h1>React Weather App</h1>
         <Weather />
+
+        <a
+          href="https://github.com/gingerfarrar/Weather-App"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          View Source Code On GitHub
+        </a>
       </header>
     </div>
   );

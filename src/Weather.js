@@ -92,15 +92,6 @@ export default function Weather(props) {
             <div class="weather-forecast" className="forecast"></div>
           </div>
         </div>
-        <div class="github">
-          <a
-            href="https://github.com/gingerfarrar/Weather-App"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            View Source Code On GitHub
-          </a>
-        </div>
       </div>
     );
   } else {
