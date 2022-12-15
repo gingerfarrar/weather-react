@@ -9,7 +9,7 @@ function App() {
         <Weather />
 
         <a
-          href="https://github.com/gingerfarrar/Weather-App"
+          href="https://github.com/gingerfarrar/weather-react"
           rel="noopener noreferrer"
           target="_blank"
         >
