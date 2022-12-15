@@ -1,0 +1,53 @@
+.Weather .card {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.Weather .card-body {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+.Weather canvas {
+  width: 120px;
+}
+.Weather .city {
+  margin-bottom: 0;
+}
+.Weather .today-temp {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.Weather .units {
+  position: relative;
+  top: -34px;
+}
+.Weather .date {
+  margin-bottom: 0;
+}
+.Weather .btn-group {
+  margin: 10px;
+}
+.Weather .current-btn {
+  margin-left: 10px;
+}
+.Weather .current-min {
+  opacity: 0.5;
+}
+.Weather .high-low {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.Weather .description {
+  opacity: 0.5;
+}
+.Weather li {
+  list-style: none;
+  margin-bottom: 0;
+}
+.Weather .forcast-min {
+  opacity: 0.5;
+}
+.Weather .github {
+  text-align: center;
+}
