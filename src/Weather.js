@@ -54,14 +54,7 @@ export default function Weather(props) {
                 Current
               </button>
             </form>
-            <div className="btn-group btn-group-sm" role="group">
-              <button type="button" className="btn btn-outline-primary">
-                fahrenheit
-              </button>
-              <button type="button" className="btn btn-outline-primary">
-                celsius
-              </button>
-            </div>
+
             <WeatherInfo data={weather} />
             <hr />
             <div class="weather-forecast" className="forecast"></div>
