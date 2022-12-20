@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   let [city, setCity] = useState(props.defaultCity);
@@ -13,6 +14,8 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
+      max: response.data.main.temp_max,
+      min: response.data.main.temp_min,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -57,7 +60,7 @@ export default function Weather(props) {
 
             <WeatherInfo data={weather} />
             <hr />
-            <div class="weather-forecast" className="forecast"></div>
+            <WeatherForecast />
           </div>
         </div>
         <a

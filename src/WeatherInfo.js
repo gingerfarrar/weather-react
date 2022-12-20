@@ -38,13 +38,21 @@ export default function WeatherInfo(props) {
               </p>
 
               <div className="WeatherTemperature">
-                <span className="today-temp">{Math.round(props.celsius)}</span>
+                <span className="today-temp">
+                  {Math.round(props.data.temperature)}
+                </span>
                 <span className="units">°C</span>
               </div>
 
               <p className="high-low">
-                <span className="current-max"></span>° /
-                <span className="current-min"></span>°
+                <span className="current-max">
+                  {Math.round(props.data.max)}
+                </span>
+                ° /
+                <span className="current-min">
+                  {Math.round(props.data.min)}
+                </span>
+                °
               </p>
             </div>
             <div className="col-4">
@@ -68,7 +76,9 @@ export default function WeatherInfo(props) {
       </div>
     );
   } else {
-    let fahrenheit = (props.celsius * 9) / 5 + 32;
+    let fahrenheit = (props.data.temperature * 9) / 5 + 32;
+    let max = (props.data.max * 9) / 5 + 32;
+    let min = (props.data.min * 9) / 5 + 32;
     return (
       <div className="WeatherInfo">
         <div className="btn-group btn-group-sm" role="group">
@@ -97,8 +107,8 @@ export default function WeatherInfo(props) {
               </div>
 
               <p className="high-low">
-                <span className="current-max"></span>° /
-                <span className="current-min"></span>°
+                <span className="current-max">{Math.round(max)}</span>° /
+                <span className="current-min">{Math.round(min)}</span>°
               </p>
             </div>
             <div className="col-4">
